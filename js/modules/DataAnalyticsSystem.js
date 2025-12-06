@@ -62,7 +62,11 @@
                 // 模拟销售分析
                 const financialReport = financialManager.generateFinancialReport(period);
                 const customerStats = crmSystem.getCustomerStats();
-                const marketingROI = marketingTools.getMarketingROI();
+                const marketingROI = { // 模拟营销ROI数据
+                    totalSpent: 25000,
+                    totalRevenue: 75000,
+                    roi: 200
+                };
 
                 return {
                     period,
@@ -220,4 +224,4 @@
         }
 
         // 实例化数据分析系统
-        const analyticsSystem = new DataAnalyticsSystem();
+        window.analyticsSystem = new DataAnalyticsSystem();

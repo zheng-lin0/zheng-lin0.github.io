@@ -243,4 +243,4 @@
         }
 
         // 实例化团队协作系统
-        const collaborationTools = new CollaborationSystem();
+        window.collaborationTools = new CollaborationSystem();

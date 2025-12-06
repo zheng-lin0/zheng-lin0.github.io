@@ -265,4 +265,4 @@
         }
 
         // 实例化API集成系统
-        const apiIntegration = new APIIntegrationSystem();
+        window.apiIntegration = new APIIntegrationSystem();

@@ -174,4 +174,4 @@
         }
 
         // 实例化财务管理系统
-        const financialManager = new FinancialManagementSystem();
+        window.financialManager = new FinancialManagementSystem();
